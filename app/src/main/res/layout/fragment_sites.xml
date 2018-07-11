@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etSsLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ss链接地址"
+        android:text="ss://YWVzLTI1Ni1jZmI6WUxzbm9hbncxMzIxNTlANDUuMzIuMTE0LjQ5OjExMjk"
+        />
+    <Button
+        android:id="@+id/btSsConn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="连接VPN"
+        />
+
+    <EditText
+        android:id="@+id/etWebLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="外网链接"
+        android:text="http://www.youtube.com"
+        />
+    <Button
+        android:id="@+id/btWebConn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="访问"
+        />
+
+</LinearLayout>

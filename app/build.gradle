@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.vm.shadowsocks"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.2"
+        multiDexEnabled true
+    }
+
+
+
+    lintOptions {
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    dexOptions {
+        //incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    testCompile 'junit:junit:4.12'
+
+//    compile ('com.journeyapps:zxing-android-embedded:3.5.0'){
+//        exclude group: 'com.android.support'
+//        exclude group: 'com.google.zxing'
+//    }
+//    compile ('com.google.zxing:core:3.0.1'){
+//        exclude group: 'com.android.support'
+//    }
+
+    compile 'org.bouncycastle:bcprov-jdk15on:1.57'
+    compile 'com.futuremind.recyclerfastscroll:fastscroll:0.2.5'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    compile 'com.just.agentweb:agentweb:4.0.2'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+
+    compile 'com.github.vondear:RxTools:v1.7.7.3'
+//    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.alibaba:fastjson:1.2.47'
+    compile 'com.alibaba:fastjson:1.1.68.android'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'com.orhanobut:logger:2.2.0'
+}

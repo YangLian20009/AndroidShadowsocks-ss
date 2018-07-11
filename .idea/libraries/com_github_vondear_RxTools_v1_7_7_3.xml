@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="com.github.vondear:RxTools-v1.7.7.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/RxTools-v1.7.7.3.aar/6cbcca5ac4b94768e6c11551dbc87d4f/jars/libs/alipaySdk-20170309.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/RxTools-v1.7.7.3.aar/6cbcca5ac4b94768e6c11551dbc87d4f/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/RxTools-v1.7.7.3.aar/6cbcca5ac4b94768e6c11551dbc87d4f/jars/libs/zip4j_1.3.2.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/RxTools-v1.7.7.3.aar/6cbcca5ac4b94768e6c11551dbc87d4f/jars/libs/zxing_core_3.0.1.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/RxTools-v1.7.7.3.aar/6cbcca5ac4b94768e6c11551dbc87d4f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
